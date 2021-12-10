@@ -15,4 +15,8 @@ public class FrontController {
     public String pics(){
         return "pictures";
     }
+    @GetMapping("/admin")
+    public String admin(){
+        return "admin";
+    }
 }
