@@ -29,6 +29,11 @@ public class FrontController {
         return "admin";
     }
 
+    @GetMapping("/new-owner")
+    public String newowner(){
+        return "newowner";
+    }
+
     @PostMapping("/admin")
     public String newOwner(@RequestParam("ownername") String name,
                            @RequestParam("owneraddress") String address,
